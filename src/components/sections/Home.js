@@ -102,8 +102,6 @@ const Home = () => {
           <Container>
               <Box><TyperWriterText /></Box>             
               <Box><CoverVideo /></Box>            
-              
-
           </Container>
       </Section>
     )

@@ -1,12 +1,14 @@
 import React from'react'
-import GIF from '../assets/Nfts/c1.png'
+import GIF from '../assets/1111.mp4'
 import styled from 'styled-components'
 
 const VivdeoContainer = styled.div`
 width:100%;
+
 video{
     width:100%;
     height:auto;
+ 
 }
 
 @media (max-width:64em){
@@ -16,8 +18,8 @@ video{
 const CoverVideo = () => {
     return(
        <VivdeoContainer>
-           <img src={GIF} />
-        </VivdeoContainer>
+           <video src={GIF} type="video/mp4" autoPlay muted loop />
+       </VivdeoContainer>
     )
 }
 

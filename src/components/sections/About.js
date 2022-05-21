@@ -2,12 +2,13 @@ import React from'react'
 import styled from 'styled-components'
 import Carousel from '../Carousel'
 import Button from '../Button'
+
 import { ThemeProvider } from 'styled-components'
 import { dark } from '../../styles/Themes'
 const Section = styled.section`
 min-height: 100vh;
 width: 100%;
-background-color: ${props => props.theme.text};
+background-color: orange;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -60,7 +61,7 @@ const Title = styled.h2`
 font-size: ${props => props.theme.fontxxl};
 text-transform: capitalize;
 width: 80%;
-color: ${props => props.theme.body};
+color: ${(props) => props.theme.text};
 align-self: flex-start;
 margin: 0 auto;
 
@@ -80,10 +81,10 @@ margin: 0 auto;
 
 const SubText = styled.p`
 font-size: ${props => props.theme.fontlg};
-color: ${props => props.theme.body};
+color: ${(props) => props.theme.text};
 align-self: flex-start;
 width: 80%;
-margin: 1rem;
+margin: 2rem auto;
 font-weight:400;
 @media (max-width:64em){
     width:100%;
@@ -101,10 +102,10 @@ font-weight:400;
 
 const SubTextLight = styled.p`
 font-size: ${props => props.theme.fontlg};
-color: ${props => `rgba(${props.theme.bodyRgba},0.9)`};
+color: ${(props) => props.theme.text};
 align-self: flex-start;
 width: 80%;
-margin: 1rem;
+margin: 2rem auto;
 font-weight:400;
 @media (max-width:64em){
     width:100%;
@@ -120,8 +121,9 @@ font-weight:400;
 `
 
 const ButtonContainer = styled.div`
+
 width: 80%;
-margin:1rem auto:
+margin: 1rem auto;
 display:flex;
 align-self: flex-start;
 
@@ -152,14 +154,11 @@ const About = () => {
 3133 high-quality founder stand-ins appear on the solana chain, each AEYKO is a unique work of art
                     </SubTextLight>
                     <ButtonContainer>
-                    <ThemeProvider theme={dark}>
-
+                   
                     <a href="https://discord.gg/v6pbxGDnsa" target="_blank" rel="noopener noreferrer">
                     <Button text="JOIN OUR DISCORD" link="#" />     
                     </a>
                     
-
-                    </ThemeProvider>
                     </ButtonContainer>
                 </Box>
             </Container>

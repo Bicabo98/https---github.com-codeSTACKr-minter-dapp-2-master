@@ -12,6 +12,7 @@ import Team from "./components/sections/Team";
 import Navigation  from "./components/Navigation";
 import Home from "./components/sections/Home";
 import ScrollToTop from "./components/ScrollToTop";
+import Stake from "./components/sections/Stake"
 
 
 function App() {
@@ -23,7 +24,6 @@ function App() {
       <Home />
       <About />
       <Roadmap />
-      
    
       <Team />
       <Faq />

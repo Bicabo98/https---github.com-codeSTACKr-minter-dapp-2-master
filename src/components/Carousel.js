@@ -45,12 +45,12 @@ import Arrow from '../assets/Arrow.svg';
  }
 
  @media (max-width:48em){
-     height:50vh;
+     height:45vh;
      width:40vw;
  }
 
  @media (max-width:30em){
-    height:45vh;
+    height:40vh;
     width:60vw;
 }
 
