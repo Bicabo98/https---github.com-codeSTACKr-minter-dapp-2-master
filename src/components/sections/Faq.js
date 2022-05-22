@@ -104,7 +104,7 @@ const Faq = () => {
                 </Box>
                 <Box>
                 <Accordion title="What is the total supply of MrAeykoNFT ?">
-                MrAeykoNFT will have a total supply of 3133
+                MrAeykoNFT will have a total supply of 2422
                     </Accordion>
                     <Accordion title="How do i earn $AEYKO ?">
                     You can earn $AEYKO by stake,airdrops and community events.
