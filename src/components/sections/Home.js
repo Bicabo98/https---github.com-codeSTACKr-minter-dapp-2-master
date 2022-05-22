@@ -10,7 +10,7 @@ const Section = styled.section`
 min-height: ${props => `calc(100vh - ${props.theme.navHeight})`};
 width: 100vw;
 position: relative;
-background-color: ${props => props.theme.body};
+background-color: ${props => props.theme.text};
 `
 
 const Container = styled.div`
@@ -36,7 +36,7 @@ align-items: center;
 }
 `
 const Box = styled.div`
-width: 50%;
+width: 40%;
 height: 100%;
 display: flex;
 flex-direction: column;

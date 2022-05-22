@@ -23,20 +23,20 @@ import png6 from '../../assets/Nfts/6.png';
 
 
 const Section = styled.section`
-min-height: 70vh;
+min-height: 100vh;
 width:100vw;
-background-color: ${props => props.theme.body};
+background-color: ${props => props.theme.text};
 position: relative;
 `
 const Title = styled.h2`
 font-size: ${props => props.theme.fontxxl};
 text-transform: capitalize;
-color: orange;
+color: ${props => props.theme.body};
 display: flex;
 justify-content: center;
 align-items: center;
-margin: 1rem auto;
-border-bottom: 2px solid ${(props) => props.theme.text};
+margin:  auto;
+
 width:fit-content;
 
 
@@ -74,7 +74,7 @@ position: relative;
 z-index:5;
 backdrop-filter:blur(4px);
 
-border: 2px solid ${props => props.theme.text};
+border: 2px solid ${props => props.theme.body};
 border-radius: 20px;
 
 
@@ -93,9 +93,9 @@ border-radius: 20px;
 const ImageContainer = styled.div`
 width: 80%;
 margin:0 auto;
-background-color:${props => props.theme.carouselColor};
-border: 1px solid ${props => props.theme.text};
-padding:1rem;
+background-color:${props => props.theme.body};
+border: 1px solid ${props => props.theme.body};
+padding:auto;
 
 border-radius:20px;
 cursor:pointer;
@@ -113,7 +113,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 text-transform: uppercase;
-color: ${props => props.theme.text};
+color: ${props => props.theme.body};
 margin-top: 1rem;
 `
 
@@ -123,7 +123,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 text-transform: capitalize;
-color: ${props => `rgba(${props.theme.textRgba},0.9)`};
+color: ${props => `rgba(${props.theme.bodyRgba},0.9)`};
 margin-top: 1rem;
 `
 
@@ -145,7 +145,8 @@ const Team = () => {
               <Title>Team</Title>
               <Container>
                   <MemberCopmonent img={png1} name="Bieber" position="Founder"/>
-                  <MemberCopmonent img={png2} name="Akako" position="Artiest" />
+                  <MemberCopmonent img={png5} name="Rival" position="Founder"/>
+                  <MemberCopmonent img={png2} name="Akiko" position="Artiest" />
                   <MemberCopmonent img={png3} name="Bboi" position="community management"/>
                   <MemberCopmonent img={png4} name="Fish" position="Dev"/>
 

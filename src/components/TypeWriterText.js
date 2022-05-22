@@ -8,7 +8,7 @@ const Title = styled.h2`
 font-size: ${props => props.theme.fontxxxl};
 text-transform: capitalize;
 width: 80%;
-color: ${props => props.theme.text};
+color: ${props => props.theme.body};
 align-self: flex-start;
 
 span{
@@ -44,7 +44,9 @@ span{
 const SubTitle = styled.h3`
 font-size: ${props => props.theme.fontlg};
 text-transform:capitalize;
-color:${props => `rgba(${props.theme.textRgba},0.6)`};
+
+color:${props => `rgba(${props.theme.bodyRgba},0.9)`};
+
 font-weight:600;
 margin-bottom: 1rem;
 width: 80%;

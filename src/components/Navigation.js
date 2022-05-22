@@ -7,7 +7,7 @@ import Logo from './Logo'
 
 const Section = styled.section`
 width:100vw;
-background-color:${props => props.theme.body};
+background-color:${props => props.theme.text};
 `
 
 const NavBar = styled.nav`
@@ -49,7 +49,7 @@ bottom:0;
 width:100vw;
 height:${props => `calc(100vh - ${props.theme.navHeight})`};
 z-index:50;
-background-color: ${props => `rgba(${props.theme.bodyRgba},0.85)`};
+background-color: ${props => `rgba(${props.theme.textRgba},0.85)`};
 backdrop-filter:blur(2px);
 
 transform: ${props => props.click ? 'translateY(0)' : `translateY(100%)`};
@@ -62,7 +62,7 @@ justify-content:center;
 
 const MenuItem = styled.li`
 margin:0 1rem;
-color:${props => props.theme.text};
+color:${props => props.theme.body};
 cursor: pointer;
 
 &::after{
@@ -70,7 +70,7 @@ cursor: pointer;
     display: block;
     width: 0%;
     height: 2px;
-    background:${props => props.theme.text};
+    background:${props => props.theme.body};
     transition: width 0.3s ease;
 }
 &:hover::after{
@@ -88,7 +88,7 @@ cursor: pointer;
 const HamburgerMenu = styled.span`
 width: ${props => props.click ? '2rem' : '1.5rem'};
 height:2px;
-background:${props => props.theme.text};
+background:${props => props.theme.body};
 
 position:absolute;
 top:2rem;
@@ -111,7 +111,7 @@ transition:all 0.3s ease;
     width:${props => props.click ? '1rem' : '1.5rem'};
     height:2px;
     right:${props => props.click ? '-2px' : '0'};
-    background:${props => props.theme.text};
+    background:${props => props.theme.body};
     position:absolute;
     transition:all 0.3s ease;
 }
@@ -157,23 +157,17 @@ const crollTo = (id) => {
                     <MenuItem onClick={() => crollTo('showcase')}>Showcase</MenuItem>
                     <MenuItem onClick={() => crollTo('team')}>Team</MenuItem>
                     <MenuItem onClick={() => crollTo('faq')}>Faq</MenuItem>
-                    <MenuItem onClick={() => crollTo(' ')}>Stake</MenuItem>
+                    <MenuItem onClick={() => crollTo('stake')}>Stake</MenuItem>
                     <MenuItem onClick={() => crollTo(' ')}>Mall</MenuItem>
                     <MenuItem>
                                        
-                    <div className="mobile">
-                    
-                        <Button text="Mint" link="https://twitter.com"/>       
-                    
+                    <div className="mobile">                   
+                        <Button text="Mint" link="https://twitter.com"/>                          
                     </div>
                     </MenuItem>
                 </Menu>
-
-                <div className="desktop">
-              
-                    <Button text="Mint" link="https://twitter.com"/>       
-               
-                   
+                <div className="desktop">             
+                    <Button text="Mint" link="https://twitter.com"/>                                 
                 </div>
             </NavBar>
         </Section>

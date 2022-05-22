@@ -2,6 +2,7 @@ import React from'react'
 import styled from'styled-components'
 import Banner from './Banner'
 import Logo from './Logo'
+import LogoBottom from './LogoBottom'
 
 import Facebook from '../Icons/Facebook'
 import Instagram from '../Icons/Instagram'
@@ -133,7 +134,7 @@ const Footer = () => {
             
             <Container>
                 <Left>
-                    <Logo />
+                    <LogoBottom />
                     <IconList>
                         <a href="http://twitter.com" target='_blank'
                         rel="noopener"
@@ -149,7 +150,7 @@ const Footer = () => {
                 <Item onClick={() => crollTo('showcase')}>Showcase</Item>
                 <Item onClick={() => crollTo('team')}>Team</Item>
                 <Item onClick={() => crollTo('faq')}>Faq</Item>
-                <Item onClick={() => crollTo('home')}>Stake</Item>
+                <Item onClick={() => crollTo('stake')}>Stake</Item>
                 <Item onClick={() => crollTo('home')}>Mall</Item>
                 </MenuItems>
             </Container>

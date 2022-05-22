@@ -12,7 +12,6 @@ width:100vw;
 background-color: ${props => props.theme.text};
 position: relative;
 color: ${props => props.theme.body};
-
 display:flex;
 justify-content:center;
 align-items:center;
@@ -22,11 +21,8 @@ const Title = styled.h1`
 font-size: ${props => props.theme.fontxxl};
 text-transform: uppercase;
 color: ${props => props.theme.body};
-
 margin: 1rem auto;
-border-bottom: 2px solid ${(props) => props.theme.carouselColor};
 width:fit-content;
-
 @media (max-width: 48em){
     font-size: ${(props) => props.theme.fontxl};
 }
@@ -103,7 +99,7 @@ const Faq = () => {
                     We are his fans and thank him for everything he does for Solana!
                     </Accordion>
                     <Accordion title="What is the minting price ?">
-                    Public: 0.65 SOL <br/> Whitelist: 0.5 SOL
+                    Public: 0.5 SOL <br/> Whitelist: 0.4 SOL
                     </Accordion>
                 </Box>
                 <Box>

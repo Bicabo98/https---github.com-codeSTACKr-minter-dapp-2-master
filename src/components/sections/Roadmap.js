@@ -13,14 +13,15 @@ const Title = styled.h2`
 font-size: ${props => props.theme.fontxxl};
 text-transform: capitalize;
 color: ${props => props.theme.text};
+background-color: lightblue;
 display: flex;
 justify-content: center;
 align-items: center;
-margin: 1rem auto;
-border-bottom: 2px solid ${(props) => props.theme.text};
-width:fit-content;
 
-@media (max-width: 40em){
+
+width:100vw;
+
+@media (max-width: 48em){
     font-size: ${props => props.theme.fontxl};
  }
 `;
@@ -40,19 +41,19 @@ justify-content:center;
 position:relative;
 
 @media (max-width: 64em){
-    width:80%;
+    width:100%;
 }
 @media (max-width: 48em){
-    width:90%;
+    width:100%;
 }
 `
 const Items = styled.ul`
 list-style:none;
-width:80%;
+width:50%;
 height:100%;
 display:flex;
 flex-direction:column;
-justify-content:conter;
+justify-content:center;
 align-items:center;
 
 @media (max-width: 48em){
@@ -109,7 +110,7 @@ display:flex;
 const ItemContainer = styled.div`
 width:80%;
 height:fit-content;
-padding:1rem;
+padding:0.5rem;
 
 @media (max-width: 48em){
    width:70%;
@@ -118,17 +119,17 @@ padding:1rem;
 
 const Box = styled.p`
 height:fit-content;
-background-color:${props => props.theme.carouselColor};
+background-color:${props => props.theme.text};
 color:${props => props.theme.text};
-padding:3rem;
+padding:1rem;
 position:relative;
-border:10px solid ${props => props.theme.text};
+border:2px solid ${props => props.theme.body};
 `
 const SubTitle = styled.span`
 display:block;
 font-size:${props => props.theme.fontxl};
 text-transform:capitalize;
-color: ${props => props.theme.text};
+color: ${props => props.theme.body};
 
 @media (max-width: 40em){
     font-size: ${props => props.theme.fontlg};
@@ -138,15 +139,15 @@ color: ${props => props.theme.text};
 `;
 const Text = styled.span`
 display:block;
-font-size:${props => props.theme.fontlg};
+font-size:${props => props.theme.fontmd};
 text-transform:capitalize;
-color: ${props => props.theme.text};
+color: ${props => props.theme.body};
 
 font-weright:400;
 margin:0.5rem 0;
 
-@media (max-width: 40em){
-    font-size: ${props => props.theme.font};
+@media (max-width: 48em){
+    font-size: ${props => props.theme.fontxs};
   
  }
 `;
@@ -218,7 +219,8 @@ useLayoutEffect(() =>  {
                     <RoadMapItem addToRef={addToRefs} title="Phase 2 - Sweep The Floor" subtext = "We have seen that the floor price has been falling due to the spread of paper hands and panic after many projects are sold out , so we will conduct sweep the floor activities for 7 weeks.Randomly acquire floors every week until we are satisfied with the floor price"/>
                     <RoadMapItem addToRef={addToRefs} title="Phase 3 - Raffle Week" subtext = "We will drop 50 Solana every week for 7 weeks"/>
                     <RoadMapItem addToRef={addToRefs} title="Phase 4 - Economic system" subtext = "We're developing a platform for staking our NFTs and tokens to receive incentives.We will build a huge fund mall, and everyone can receive $aeyko every day after staking AeykoNFT to the official website."/>
-                    <RoadMapItem addToRef={addToRefs} title="Phase 5 - Project support" subtext = "Help other new projects get better support!"/>
+                    <RoadMapItem addToRef={addToRefs} title="Phase 5 - Community DAO" subtext = "We will listen to the valuable opinions of the community!"/>
+                    <RoadMapItem addToRef={addToRefs} title="Phase 6 - Project support" subtext = "Help other new projects get better support!"/>
            
                 </Items>
             </Container>

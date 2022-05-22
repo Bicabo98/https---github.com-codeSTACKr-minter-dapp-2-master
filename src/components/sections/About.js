@@ -8,7 +8,7 @@ import { dark } from '../../styles/Themes'
 const Section = styled.section`
 min-height: 100vh;
 width: 100%;
-background-color: orange;
+background-color:${(props) => props.theme.text};
 display: flex;
 justify-content: center;
 align-items: center;
@@ -61,7 +61,7 @@ const Title = styled.h2`
 font-size: ${props => props.theme.fontxxl};
 text-transform: capitalize;
 width: 80%;
-color: ${(props) => props.theme.text};
+color: ${(props) => props.theme.body};
 align-self: flex-start;
 margin: 0 auto;
 
@@ -81,7 +81,7 @@ margin: 0 auto;
 
 const SubText = styled.p`
 font-size: ${props => props.theme.fontlg};
-color: ${(props) => props.theme.text};
+color: ${(props) => props.theme.body};
 align-self: flex-start;
 width: 80%;
 margin: 2rem auto;
@@ -102,7 +102,7 @@ font-weight:400;
 
 const SubTextLight = styled.p`
 font-size: ${props => props.theme.fontlg};
-color: ${(props) => props.theme.text};
+color: ${(props) => props.theme.body};
 align-self: flex-start;
 width: 80%;
 margin: 2rem auto;
