@@ -93,8 +93,8 @@ border-radius: 20px;
 const ImageContainer = styled.div`
 width: 80%;
 margin:0 auto;
-background-color:${props => props.theme.body};
-border: 1px solid ${props => props.theme.body};
+
+
 padding:auto;
 
 border-radius:20px;

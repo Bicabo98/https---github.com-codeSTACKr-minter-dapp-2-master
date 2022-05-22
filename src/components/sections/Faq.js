@@ -6,7 +6,7 @@ import { gsap } from "gsap";
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const Section = styled.section`
-min-height: 80vh;
+min-height: auto;
 height:auto;
 width:100vw;
 background-color: ${props => props.theme.text};
@@ -99,15 +99,18 @@ const Faq = () => {
                     We are his fans and thank him for everything he does for Solana!
                     </Accordion>
                     <Accordion title="What is the minting price ?">
-                    Public: 0.5 SOL <br/> Whitelist: 0.4 SOL
+                    Public: 0.5 SOL <br/> Whitelist: 0.4 SOL.
                     </Accordion>
                 </Box>
                 <Box>
                 <Accordion title="What is the total supply of MrAeykoNFT ?">
-                MrAeykoNFT will have a total supply of 2422
+                MrAeykoNFT will have a total supply of 2422.
                     </Accordion>
                     <Accordion title="How do i earn $AEYKO ?">
                     You can earn $AEYKO by stake,airdrops and community events.
+                    </Accordion>
+                    <Accordion title="Why Solana?">
+                    Very low fees and excellent potential.
                     </Accordion>
 
 
