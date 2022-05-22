@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const LogoTxt = styled.h1`
 font-family:'akaya Telivigala',cursive;
 font-size:${props => props.theme.fontxxxl};
-color:${props => props.theme.text};
+color:${props => props.theme.body};
 transition:all 0.2s ease;
 &:hover{
     transform: scale(1.1);
@@ -21,7 +21,7 @@ const Logo = () => {
     return(
         <LogoTxt>
             <Link to="/">
-                Ayeko.
+                MrAyeko.
             </Link>
         </LogoTxt>
     )
