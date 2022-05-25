@@ -30,7 +30,9 @@ function App() {
       <Footer />
       <ScrollToTop />
       </ThemeProvider>
+    
     </>
+    
   );
 }
 

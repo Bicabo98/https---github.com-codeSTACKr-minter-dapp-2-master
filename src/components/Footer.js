@@ -147,11 +147,10 @@ const Footer = () => {
                 <Item onClick={() => crollTo('home')}>Home</Item>
                 <Item onClick={() => crollTo('about')}>About</Item>
                 <Item onClick={() => crollTo('roadmap')}>Roadmap</Item>
-                <Item onClick={() => crollTo('showcase')}>Showcase</Item>
                 <Item onClick={() => crollTo('team')}>Team</Item>
                 <Item onClick={() => crollTo('faq')}>Faq</Item>
                 <Item onClick={() => crollTo('stake')}>Stake</Item>
-                <Item onClick={() => crollTo('home')}>Mall</Item>
+                <Item onClick={() => crollTo('stake')}>Mall</Item>
                 </MenuItems>
             </Container>
  

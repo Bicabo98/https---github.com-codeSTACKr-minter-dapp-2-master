@@ -154,11 +154,10 @@ const crollTo = (id) => {
                     <MenuItem onClick={() => crollTo('home')}>Home</MenuItem>
                     <MenuItem onClick={() => crollTo('about')}>About</MenuItem>
                     <MenuItem onClick={() => crollTo('roadmap')}>Roadmap</MenuItem>
-                    <MenuItem onClick={() => crollTo('showcase')}>Showcase</MenuItem>
                     <MenuItem onClick={() => crollTo('team')}>Team</MenuItem>
                     <MenuItem onClick={() => crollTo('faq')}>Faq</MenuItem>
                     <MenuItem onClick={() => crollTo('stake')}>Stake</MenuItem>
-                    <MenuItem onClick={() => crollTo(' ')}>Mall</MenuItem>
+                    <MenuItem onClick={() => crollTo('stake')}>Mall</MenuItem>
                     <MenuItem>
                                        
                     <div className="mobile">                   
