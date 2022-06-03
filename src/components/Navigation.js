@@ -160,14 +160,19 @@ const crollTo = (id) => {
                     <MenuItem onClick={() => crollTo('stake')}>Mall</MenuItem>
                     <MenuItem>
                                        
+                    <a href="https://mraeyko-mint.netlify.app/" target="_blank" rel="noopener noreferrer">
                     <div className="mobile">                   
-                        <Button text="Mint" link="https://twitter.com"/>                          
+                        <Button text="Mint" link="https://mraeyko-mint.netlify.app/"/>                          
                     </div>
+                    </a>
                     </MenuItem>
                 </Menu>
+
+                <a href="https://mraeyko-mint.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <div className="desktop">             
-                    <Button text="Mint" link="https://twitter.com"/>                                 
+                    <Button text="Mint" link="https://mraeyko-mint.netlify.app/"/>                                 
                 </div>
+                </a>
             </NavBar>
         </Section>
     )

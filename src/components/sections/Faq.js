@@ -99,7 +99,7 @@ const Faq = () => {
                     We are his fans and thank him for everything he does for Solana!
                     </Accordion>
                     <Accordion title="What is the minting price ?">
-                    Public: 0.5 SOL <br/> Whitelist: 0.4 SOL.
+                    Public: 0.35 SOL <br/> Whitelist: 0.09 SOL.
                     </Accordion>
                 </Box>
                 <Box>
